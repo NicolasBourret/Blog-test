@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transform: translateY(100%);
+}
+
+.container {
+  overflow: hidden;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+@keyframes container {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.container__animation {
+  animation: container 2s both;
+}
+
+.logo__animate_1 {
+  animation: container 2s 2s both;
+}
+
+.logo__animate_2 {
+  animation: container 2s 3s both;
+}
+
+.logo__animate_3 {
+  animation: container 2s 4s both;
+}
+
+.logo__animate_4 {
+  animation: container 2s 5s both;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color_secondary);
+}

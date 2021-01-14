@@ -1,0 +1,43 @@
+.button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.button__article {
+  background-color: var(--color_secondary);
+  border: 2px solid var(--color_secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: var(--color_white);
+  font-weight: bold;
+  position: relative;
+}
+
+.button__article:active::after {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.button__article::after {
+  display: block;
+  content: "Lire l'article";
+  background-color: var(--color_white);
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: var(--color_secondary);
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.button__navigation {
+  background-color: var(--color_white);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--box-shadow);
+}

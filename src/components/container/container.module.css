@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--color_white);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.round {
+  border-radius: 20px;
+  padding: 0;
+}
